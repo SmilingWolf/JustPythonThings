@@ -30,9 +30,9 @@ valX = valData.filter(items=['PSNRY', 'PSNRCb', 'PSNRCr', 'SSIMY', 'SSIMCb', 'SS
 i = Input(shape=(6, ))
 x = Dense(7, kernel_initializer='lecun_normal')(i)
 x = Activation('selu')(x)
-x = Dense(15, kernel_initializer='lecun_normal')(x)
-x = Activation('selu')(x)
 x = Dense(5, kernel_initializer='lecun_normal')(x)
+x = Activation('selu')(x)
+x = Dense(3, kernel_initializer='lecun_normal')(x)
 x = Activation('selu')(x)
 o = Dense(1, kernel_initializer='lecun_normal')(x)
 
