@@ -1,6 +1,6 @@
 import pandas as pd
 
-mos = pd.read_csv('mos.txt')
+mos = pd.read_csv('mos.rescaled.txt', names=['MOS'])
 psnr = pd.read_csv('PSNR3.txt')
 ssim = pd.read_csv('SSIM3.txt')
 

@@ -8,7 +8,7 @@ from sklearn.externals import joblib
 from keras.models import load_model
 
 for database in ['CSIQ', 'LIVE2', 'TID2013']:
-	data = pd.read_csv('scores-%s.csv' % database)
+	data = pd.read_csv('scores.full.%s.csv' % database)
 
 	for modelName in sys.argv[1:]:
 		scaler = joblib.load('%s.wgt' % modelName)
